@@ -2,22 +2,27 @@
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
-
 // Dichiara la funzione qui.
-// * credo l'array vuoto start
-const start = [ ]
-// dichiaro la funzione beginWord
+// * creo l'array vuoto start
+// dichiaro la funzione beginWord con parametri array e letter e inizializzo il ciclo for
+// ciclo all'interno dell'array per recuperare la prima lettera di ogni elemento
+//pusho quell'elemento dentro l'array start
 function beginWord(array, letter) {
-    for (let i = 0; i < array.length; i++){
-        if  (array[i].startsWith("A")) {
-        } 
-        start.push(array[i])
+  const start = []; 
+  for (let i = 0; i < array.length; i++) {
+    if (array[i][0] === letter) {
+      start.push(array[i]);
     }
+  }
+  return start;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-
-console.log(beginWord(names))
-
+//invoco la funzione con la lettera che mi interessa e stampo il risultato in console
+console.log(beginWord(names, "A"));
+console.log(beginWord(names, "L"));
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
+
+
+//TODO: arrow function
