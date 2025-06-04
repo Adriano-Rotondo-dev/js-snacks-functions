@@ -8,7 +8,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 const start = [ ]
 // dichiaro la funzione beginWord
 function beginWord(array, letter) {
-    for (let i = 0; i < array.lenght; i++){
+    for (let i = 0; i < array.length; i++){
         if  (names[i].startsWith("")) {
         } 
         start.push(names[i].startsWith(""))
