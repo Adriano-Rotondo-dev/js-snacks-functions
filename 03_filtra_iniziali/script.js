@@ -26,3 +26,16 @@ console.log(beginWord(names, "L"));
 
 
 //TODO: arrow function
+
+const startWord = (array, letter) => {
+    const start = []
+     for (let i = 0; i < array.length; i++) {
+    if (array[i][0] === letter) {
+      start.push(array[i]);
+    }
+  }
+  return start;
+}
+
+console.log(startWord(names, "A"))
+console.log(startWord(names, "L"))
