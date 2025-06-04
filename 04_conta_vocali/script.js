@@ -33,3 +33,28 @@ console.log(vowelsCounter(word));
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
 
 //TODO: arrow function
+const counterVowels = (string) => {
+  // inizializzo la variabile "counterArrow" all'interno della arrow function
+  let counterArrow = 0;
+  //inizializzo il ciclo for per ciclare all'interno della stringa
+  for (let i = 0; i < string.length; i++) {
+    //inizializzo la variabile vowel che estrae il singolo carattere
+    let vowel = string[i];
+    // verifico se il singolo carattere è una delle vocali
+    if (
+      vowel === "a" ||
+      vowel === "e" ||
+      vowel === "i" ||
+      vowel === "o" ||
+      vowel === "u"
+    ) {
+      // se è una delle vocali, incrementa la variabile counter
+      counterArrow++;
+    }
+  }
+  // restituisco il valore della variabile
+  return counterArrow;
+};
+
+//
+console.log(counterVowels(word));
