@@ -26,3 +26,17 @@ function firstChar() {
 console.log(firstChar(names));
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+
+// TODO: arrow function
+// creo un nuovo array vuoto 
+const newArrayArrow = [];
+//dichiaro e invoco l'arrow function
+const firstLetterArrow = () => {
+  for (let i = 0; i < names.length; i++) {
+    const startLetterArrow = names[i].charAt(0);
+    newArrayArrow.push(startLetterArrow)
+  }
+  return newArrayArrow
+};
+// stampo in console il risultato della funzione
+console.log(firstLetterArrow(names))
