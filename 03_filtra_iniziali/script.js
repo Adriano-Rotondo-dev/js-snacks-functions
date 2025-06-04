@@ -8,7 +8,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 // ciclo all'interno dell'array per recuperare la prima lettera di ogni elemento
 //pusho quell'elemento dentro l'array start
 function beginWord(array, letter) {
-  const start = []; 
+  const start = [];
   for (let i = 0; i < array.length; i++) {
     if (array[i][0] === letter) {
       start.push(array[i]);
@@ -24,18 +24,17 @@ console.log(beginWord(names, "L"));
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
 
-
 //TODO: arrow function
 
 const startWord = (array, letter) => {
-    const start = []
-     for (let i = 0; i < array.length; i++) {
+  const start = [];
+  for (let i = 0; i < array.length; i++) {
     if (array[i][0] === letter) {
       start.push(array[i]);
     }
   }
   return start;
-}
+};
 
-console.log(startWord(names, "A"))
-console.log(startWord(names, "L"))
+console.log(startWord(names, "A"));
+console.log(startWord(names, "L"));
