@@ -5,7 +5,7 @@ const word = "javascript";
 // Dichiara la funzione qui.
 // dichiaro la funzione vowelsCounter con parametro string
 function vowelsCounter(string) {
-    // inizializzo una variabile "counter" che aumenterà sulla base delle vocali che trova all'interno della parola
+  // inizializzo una variabile "counter" che aumenterà sulla base delle vocali che trova all'interno della parola
   let counter = 0;
   //inizializzo il ciclo for per ciclare all'interno della stringa
   for (let i = 0; i < string.length; i++) {
@@ -19,12 +19,12 @@ function vowelsCounter(string) {
       vowel === "o" ||
       vowel === "u"
     ) {
-        // se è una delle vocali, incrementa la variabile counter 
-      counter++; 
+      // se è una delle vocali, incrementa la variabile counter
+      counter++;
     }
   }
   // restituisco il valore della variabile
-  return counter
+  return counter;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
