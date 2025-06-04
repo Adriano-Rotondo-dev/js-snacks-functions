@@ -4,10 +4,20 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
+// * credo l'array vuoto start
+const start = [ ]
+// dichiaro la funzione beginWord
+function beginWord(array, letter) {
+    for (let i = 0; i < array.lenght; i++){
+        if  (names[i].startsWith("")) {
+        } 
+        start.push(names[i].startsWith(""))
+    }
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
+console.log(beginWord(names))
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
