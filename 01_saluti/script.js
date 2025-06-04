@@ -15,3 +15,9 @@ function hello(name) {
 console.log(hello(userName));
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
+
+
+// TODO: arrow function
+// dichiaro e invoco la arrow function helloArrow e procedo a stamparla in console
+const helloArrow = () => "Ciao "+ userName 
+console.log(helloArrow ())
