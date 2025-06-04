@@ -25,8 +25,9 @@ console.log(beginWord(names, "L"));
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
 
 //TODO: arrow function
-
+// dichiaro l'arrow function
 const startWord = (array, letter) => {
+    // creo l'array vuoto all'interno della arrow function
   const start = [];
   for (let i = 0; i < array.length; i++) {
     if (array[i][0] === letter) {
@@ -35,6 +36,6 @@ const startWord = (array, letter) => {
   }
   return start;
 };
-
+// invoco l'arrow function e stampo il risultato in console
 console.log(startWord(names, "A"));
 console.log(startWord(names, "L"));

@@ -3,17 +3,16 @@
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
-//* creo un array vuoto per conservare le iniziali dei nomi
-
-const newArray = [];
 
 /* dichiaro la funzione firstChar dentro la quale inizializzo un ciclo for
+- creo un array vuoto per conservare le iniziali dei nomi
 - Ciclo dentro l'array names e recupero la prima lettera [.charAt(0)] di ogni elemento dell'array
 - salvo le lettere selezionate nella variabile firstLetter
 - pusho il contenuto della variabile firstLetter nell'array vuoto newArray creato in precedenza
 */
 
 function firstChar() {
+  const newArray = [];
   for (let i = 0; i < names.length; i++) {
     const firstLetter = names[i].charAt(0);
     newArray.push(firstLetter);
@@ -28,15 +27,15 @@ console.log(firstChar(names));
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
 
 // TODO: arrow function
-// creo un nuovo array vuoto 
-const newArrayArrow = [];
-//dichiaro e invoco l'arrow function
+//dichiaro l'arrow function
 const firstLetterArrow = () => {
+  // creo un nuovo array vuoto
+  const newArrayArrow = [];
   for (let i = 0; i < names.length; i++) {
     const startLetterArrow = names[i].charAt(0);
-    newArrayArrow.push(startLetterArrow)
+    newArrayArrow.push(startLetterArrow);
   }
-  return newArrayArrow
+  return newArrayArrow;
 };
 // stampo in console il risultato della funzione
-console.log(firstLetterArrow(names))
+console.log(firstLetterArrow(names));
